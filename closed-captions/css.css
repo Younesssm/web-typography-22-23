@@ -18,10 +18,50 @@ Feel free to adjust the defaults to your needs.
 	opacity: 0;
 }
 .voice1 {
-	font-style: italic;
+	font-style: bold;
+	font-size: 5em;
+	position:relative; top:400px; left:70px;
+	color: #27374D;
 }
+
 .voice2 {
 	font-weight: bold;
+	font-size: 5em;
+	position:relative; top:400px; left:70px;
+	color: green;
+}
+
+.voice3 {
+	font-weight: bold;
+	font-size: 3em;
+	position:relative; top:400px; left:70px;
+	color: white;
+}
+
+.voice3 span {
+	opacity: 0;
+	font-family: brenner;
+}
+.voice3 span:first-of-type,.voice3 span:nth-of-type(2)
+{
+	opacity: 1;
+	transition: 0s;
+	text-transform: uppercase;
+}
+
+.voice3 span:nth-of-type(3) {
+	opacity: 1;
+	transition: 0s .6s;
+	margin-right: -.25em;
+	font-weight: 400;
+}
+
+.voice4 {
+	font-family: Brenner;
+	font-weight: bold;
+	font-size: 5em;
+	position:relative; top:400px; left:70px;
+	color: yellow;
 }
 
 /* **********************************************
@@ -32,7 +72,7 @@ The first paragraph, with extended timing for
 	spoken.
 You probably want to change the styling.
 ********************************************** */
-.p0 span {
+ .p0 span {
 	opacity: 0;
 	font-family: brenner;
 }
@@ -99,8 +139,7 @@ You probably want to change the styling.
 }
 
 .p1.on {
-	background: hotpink;
-	color: red;
+	color: green;
 }
 
 /* **********************************************
@@ -111,14 +150,126 @@ Sounds.
 *********************************************  */
 
 /* The moment the class .sound1 is added to the body, the background is yellow */
+.sound0 #video-mask{
+	  animation: trillen 1.5s linear ;
+}
+
+@keyframes trillen {
+ 0% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(-25px, -25px);
+  }
+  40% {
+    transform: translate(25px, -25px);
+  }
+  60% {
+    transform: translate(-25px, 25px);
+  }
+  80% {
+    transform: translate(25px, 25px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+
 .sound1 {
-	background: hotpink;
+	background: blue;
 }
 
 /* The moment the class .sound1 is added to the body, the movie makes a turn */
 .sound1 #video-mask {
-	box-shadow: 2em 2em 2em olivedrab;
+	animation: eersteeffect 4s;
 }
+
+@keyframes eersteeffect{
+	0% {
+		box-shadow: none;
+	} 
+		50% {
+    box-shadow: 0 0 100px 100px blue;
+  }
+	
+  100% {
+		box-shadow: none;
+}
+}
+
+.sound0 {
+	background: darkcyan;
+}
+
+.sound2 {
+	background: red;
+}
+
+.sound3 {
+	background: greenyellow;
+}
+
+.sound4 {
+	background: black;
+}
+
+.sound5 {
+	background: yellow;
+}
+
+.sound6 {
+	background: black;
+}
+
+.sound7 {
+	background: yellow;
+}
+
+.sound8 {
+	background: black;
+}
+
+.sound9 {
+	animation: knipperen1 1s infinite;
+}
+
+@keyframes knipperen1 {
+  0% {
+    background-color: black;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    background-color: black;
+  }
+}
+
+.sound10 {
+	animation: knipperen3 0.1s 210 ;
+
+}
+
+@keyframes knipperen3 {
+  0% {
+    background-color: black;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    background-color: black;
+  }
+}
+
+.sound11 {
+	background: red;
+	
+}
+
+
+
 
 
 /* **********************************************
