@@ -18,24 +18,28 @@ Feel free to adjust the defaults to your needs.
 	opacity: 0;
 }
 .voice1 {
-	font-style: bold;
-	font-size: 5em;
-	position:relative; top:400px; left:70px;
-	color: #27374D;
+	font-style: italic;
+	font-size: 2em;
+	position:relative; top:450px; left:90px;
+	color: black;
+	background-color: white;
+	padding: 10px;
 }
 
 .voice2 {
 	font-weight: bold;
-	font-size: 5em;
-	position:relative; top:400px; left:70px;
-	color: green;
+	font-size: 2em;
+	position:relative; top:450px; left:90px;
+	color: white;
+	background-color: black;
+	padding: 10px;
 }
 
 .voice3 {
 	font-weight: bold;
-	font-size: 3em;
-	position:relative; top:400px; left:70px;
-	color: white;
+	font-size: 2em;
+	position:relative; top:500px; left:70px;
+	color: red;
 }
 
 .voice3 span {
@@ -58,10 +62,12 @@ Feel free to adjust the defaults to your needs.
 
 .voice4 {
 	font-family: Brenner;
-	font-weight: bold;
-	font-size: 5em;
-	position:relative; top:400px; left:70px;
-	color: yellow;
+	font-weight: lighter;
+	font-size: 2em;
+	position:relative; top:450px; left:90px;
+	color: black;
+	background-color: white;
+	padding: 10px;
 }
 
 /* **********************************************
@@ -139,7 +145,7 @@ You probably want to change the styling.
 }
 
 .p1.on {
-	color: green;
+	color: white;
 }
 
 /* **********************************************
@@ -151,7 +157,7 @@ Sounds.
 
 /* The moment the class .sound1 is added to the body, the background is yellow */
 .sound0 #video-mask{
-	  animation: trillen 1.5s linear ;
+	  animation: trillen 2s linear ;
 }
 
 @keyframes trillen {
@@ -159,16 +165,16 @@ Sounds.
     transform: translate(0, 0);
   }
   20% {
-    transform: translate(-25px, -25px);
+    transform: translate(-30px, -30px);
   }
   40% {
-    transform: translate(25px, -25px);
+    transform: translate(30px, -30px);
   }
   60% {
-    transform: translate(-25px, 25px);
+    transform: translate(-30px, 30px);
   }
   80% {
-    transform: translate(25px, 25px);
+    transform: translate(30px, 30px);
   }
   100% {
     transform: translate(0, 0);
@@ -198,16 +204,50 @@ Sounds.
 }
 }
 
-.sound0 {
-	background: darkcyan;
+.sound2 {
+	background: lightcyan;
 }
 
-.sound2 {
-	background: red;
+.sound2 #video-mask {
+	animation: tweedeeffect 4s;
+}
+
+@keyframes tweedeeffect{
+	0% {
+		box-shadow: none;
+	} 
+		20% {
+    box-shadow: 0 0 100px 100px lightcyan;
+  }
+	
+  50% {
+		box-shadow: none;
+}
+}
+
+.sound0 {
+	background: darkred;
 }
 
 .sound3 {
 	background: greenyellow;
+}
+
+.sound3 #video-mask {
+	animation: derdeeffect 4s;
+}
+
+@keyframes derdeeffect{
+	0% {
+		box-shadow: none;
+	} 
+		25% {
+    box-shadow: 0 0 100px 100px yellow;
+  }
+	
+  75% {
+		box-shadow: none;
+}
 }
 
 .sound4 {
@@ -218,12 +258,46 @@ Sounds.
 	background: yellow;
 }
 
+.sound5 #video-mask {
+	animation: vijfdeeffect 5s;
+}
+
+@keyframes vijfdeeffect{
+	0% {
+		box-shadow: none;
+	} 
+		25% {
+    box-shadow: 0 0 100px 100px yellow;
+  }
+	
+  75% {
+		box-shadow: none;
+}
+}
+
 .sound6 {
 	background: black;
 }
 
 .sound7 {
 	background: yellow;
+}
+
+.sound7 #video-mask {
+	animation: zesdeeffect 4s;
+}
+
+@keyframes zesdeeffect{
+	0% {
+		box-shadow: none;
+	} 
+		25% {
+    box-shadow: 0 0 100px 100px yellow;
+  }
+	
+  75% {
+		box-shadow: none;
+}
 }
 
 .sound8 {
@@ -247,7 +321,7 @@ Sounds.
 }
 
 .sound10 {
-	animation: knipperen3 0.1s 210 ;
+	animation: knipperen3 0.1s 200 ;
 
 }
 
@@ -264,7 +338,7 @@ Sounds.
 }
 
 .sound11 {
-	background: red;
+	background: white;
 	
 }
 
