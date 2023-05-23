@@ -305,7 +305,7 @@ Sounds.
 }
 
 .sound9 {
-	animation: knipperen1 1s infinite;
+	animation: knipperen1 0.2s infinite;
 }
 
 @keyframes knipperen1 {
