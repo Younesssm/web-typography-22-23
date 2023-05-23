@@ -24,6 +24,8 @@ Zodra er een alarm geluid komt is er visueel een golf effect te zien. Deze effec
 
 <img width="584" alt="Visueel geluidseffecten code" src="https://github.com/Younesssm/web-typography-22-23/assets/94920466/3b1caad7-fa3b-4fa8-ae65-d88791f965ac">
 
-Op het moment dat er een uitspraak wordt gedaan met fu*k off skin-job, heb ik deze een rode kleur gegeven en 1em kleiner gemaakt. Fu*k off heb ik Bold gemaakt omdat de uitstraak van hard naar zacht gaat. De tekst staat links onder omdat de persoon ook van links komt.
+Op het moment dat er een uitspraak wordt gedaan met fuck off skin-job, heb ik deze een rode kleur gegeven en 1em kleiner gemaakt. Fuck off heb ik Bold gemaakt omdat de uitstraak van hard naar zacht gaat. De tekst staat links onder omdat de persoon ook van links komt.
 
 <img width="1006" alt="Fu*k off typografie" src="https://github.com/Younesssm/web-typography-22-23/assets/94920466/70e2e123-4026-4564-94f9-a5871a29d67f">
+
+Op het einde van de video is er een moment dat een piep steeds harder hoorbaar is. Om dit visueel te laten zien heb ik gebruik gemaakt van een zwart wit background dat snel knippert. Zodra de background snel knippert is het verveld om er lang te kijken. Dit geeft hetzelfde effect als een verveldende piep. Ik heb geprobeerd om het knipperen van zacht naar hard te laten gaan, maar dit was voor mij te ingewikkeld om het in javacript te realiseren. Daarom heb ik het knipperen beperkt gehouden. Ik wil dit graag in de toekomst bijleren.
